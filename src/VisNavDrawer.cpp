@@ -24,7 +24,7 @@
 #include <p4vasp/VisNavDrawer.h>
 #include <FL/Fl.H>
 #include <FL/gl.h>
-#include <GL/glu.h>
+#include <openGL/glu.h>
 #include <p4vasp/vecutils.h>
 #include <p4vasp/Exceptions.h>
 

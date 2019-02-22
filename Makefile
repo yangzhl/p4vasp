@@ -43,11 +43,11 @@ P4V           = p4v
 
 all: p4vasp
 local:
-	cd install && python2 configure.py local
+	cd install && python configure.py local
 config:
-	cd install && python2 configure.py
-p4vasp: p4vasp_config uninstallsh fltk appletlist
-	cd odpdom && $(MAKE) libODP.a	
+	cd install && python configure.py
+p4vasp: p4vasp_config uninstallsh appletlist
+	cd odpdom && $(MAKE) libODP.a
 	cd src && $(MAKE)
 p4vasp_config:
 	echo "p4vasp_home='$(P4VASP_HOME)'" >$(P4VCONFIG)
@@ -67,9 +67,9 @@ launcher:
 	echo "#export APPMENU_DISPLAY_BOTH=1" >>$(P4V)
 	echo "export UBUNTU_MENUPROXY=0" >>$(P4V)
 	echo "export P4VASP_HOME="$(P4VASP_HOME) >> $(P4V)
-	echo "exec python2 "$(BINDIR)"/p4v.py \"\$$@\"" >>$(P4V)
+	echo "exec python "$(BINDIR)"/p4v.py \"\$$@\"" >>$(P4V)
 appletlist:
-	cd install && python2 makeappletlist.py
+	cd install && python makeappletlist.py
 bashrc:setenvironment
 	echo "" >> ~/.bashrc
 	cat $(SETENVIRONMENT) >> ~/.bashrc
@@ -142,10 +142,10 @@ cleanall_odpdom:
 	cd odpdom && $(MAKE) cleanall
 cleanall_ext:
 	cd ext && sh clean.sh
-        
+
 clean: clean_p4vasp clean_odpdom
 cleanall: cleanall_p4vasp cleanall_odpdom cleanall_doc cleanall_ext
-	
+
 install_pythonpkg:p4vasp
 	mkdir -p $(SITE_PACKAGES)/p4vasp
 	cd lib; cp -R p4vasp $(SITE_PACKAGES); cd ..
@@ -157,20 +157,20 @@ install_pythonpkg:p4vasp
 	chmod -R 644 $(SITE_PACKAGES)/p4vasp/paint3d/*
 	chmod -R 755 $(SITE_PACKAGES)/p4vasp/export
 	chmod -R 644 $(SITE_PACKAGES)/p4vasp/export/*
-	chmod -R 755 $(SITE_PACKAGES)/p4vasp/piddle	
+	chmod -R 755 $(SITE_PACKAGES)/p4vasp/piddle
 	cd src; install -m755  cp4vasp.py _cp4vasp.so $(SITE_PACKAGES); cd ..
-	
+
 install_gui:install_pythonpkg uninstallsh launcher
 	mkdir -p     $(P4VASP_HOME)
 	cp -R data   $(P4VASP_HOME)
 	cp -R utils  $(P4VASP_HOME)
 	chmod -R 755 $(P4VASP_HOME)/data
 	chmod    644 $(P4VASP_HOME)/data/*
-	chmod    755 $(P4VASP_HOME)/data/glade 
+	chmod    755 $(P4VASP_HOME)/data/glade
 	chmod    644 $(P4VASP_HOME)/data/glade/*
 	chmod    755 $(P4VASP_HOME)/data/glade/pixmaps
 	chmod    644 $(P4VASP_HOME)/data/glade/pixmaps/*
-	chmod    755 $(P4VASP_HOME)/data/glade2 
+	chmod    755 $(P4VASP_HOME)/data/glade2
 	chmod    644 $(P4VASP_HOME)/data/glade2/*
 	chmod    755 $(P4VASP_HOME)/data/glade2/pixmaps
 	chmod    644 $(P4VASP_HOME)/data/glade2/pixmaps/*
@@ -184,7 +184,7 @@ install_gui:install_pythonpkg uninstallsh launcher
 
 	install -m755 uninstall.sh $(P4VASP_HOME)/uninstall.sh
 	install -m755 diagnostic.py $(P4VASP_HOME)/diagnostic.py
-	
+
 	install -m644 BUGS FAQS LICENSE README $(P4VASP_HOME)
 	mkdir -p $(BINDIR)
 	install -d -m755     $(BINDIR)
@@ -192,7 +192,7 @@ install_gui:install_pythonpkg uninstallsh launcher
 	install -m755 $(P4V) $(BINDIR)/$(P4V)
 
 install_doc:
-	mkdir -p       $(P4VASP_HOME)	
+	mkdir -p       $(P4VASP_HOME)
 	cp -R doc      $(P4VASP_HOME)
 	chmod -R 755   $(P4VASP_HOME)/doc
 	chmod    644   $(P4VASP_HOME)/doc/*
@@ -202,21 +202,21 @@ install_doc:
 	chmod -R 755   $(P4VASP_HOME)/doc/api/python
 	chmod -R 755   $(P4VASP_HOME)/doc/intro
 	chmod    644   $(P4VASP_HOME)/doc/intro/*
-		
+
 install_devel:install_pythonpkg
 	mkdir -p $(LIBDIR)
 	mkdir -p $(INCLUDEDIR)/ODP
 	mkdir -p $(INCLUDEDIR)/p4vasp
-	cp -R odpdom/include/ODP $(INCLUDEDIR)	
+	cp -R odpdom/include/ODP $(INCLUDEDIR)
 	cp -R src/include/p4vasp $(INCLUDEDIR)
 	chmod 755 $(INCLUDEDIR)/ODP
 	chmod 755 $(INCLUDEDIR)/p4vasp
 	chmod 644 $(INCLUDEDIR)/ODP/*
 	chmod 644 $(INCLUDEDIR)/p4vasp/*
 	cp src/libp4vasp.a $(LIBDIR)
-	chmod 644 $(LIBDIR)/libp4vasp.a	
+	chmod 644 $(LIBDIR)/libp4vasp.a
 	cp odpdom/libODP.a $(LIBDIR)
-	chmod 644 $(LIBDIR)/libODP.a	
+	chmod 644 $(LIBDIR)/libODP.a
 install:install_gui install_devel
 
 uninstallsh:
@@ -235,16 +235,15 @@ uninstall_pythonpkg:
 	rm -Rf $(SITE_PACKAGES)/p4vasp
 	rm -Rf $(SITE_PACKAGES)/cp4vasp.py
 	rm -Rf $(SITE_PACKAGES)/_cp4vasp.so
-	
+
 uninstall_gui:
 	rm -Rf $(P4VASP_HOME)
 	rm -f  $(BINDIR)/p4v.py
 	rm -f  $(BINDIR)/p4v
-	
+
 uninstall_devel:
 	rm -Rf $(INCLUDEDIR)/ODP
 	rm -Rf $(INCLUDEDIR)/p4vasp
-	rm -Rf $(LIBDIR)/libp4vasp.a 
+	rm -Rf $(LIBDIR)/libp4vasp.a
 	rm -Rf $(LIBDIR)/libODP.a
 uninstall:uninstall_gui uninstall_devel uninstall_pythonpkg
-

@@ -24,7 +24,7 @@
 #include <p4vasp/VisIsosurfaceDrawer.h>
 #include <math.h>
 #include <FL/gl.h>
-#include <GL/glu.h>
+#include <openGL/glu.h>
 #include <stdio.h>
 #include <string.h>
 #include <p4vasp/vecutils.h>

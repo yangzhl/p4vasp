@@ -25,7 +25,7 @@
 #include <p4vasp/Exceptions.h>
 #include <stdio.h>
 #include <FL/gl.h>
-#include <GL/glu.h>
+#include <openGL/glu.h>
 
 const char *VisDrawer::getClassName(){return "VisDrawer";}
 

@@ -28,7 +28,7 @@
 #include <FL/Fl.H>
 #include <FL/Fl_Gl_Window.H>
 #include <FL/gl.h>
-#include <GL/glu.h>
+#include <openGL/glu.h>
 #include <p4vasp/VisFLWindow.h>
 
 THREAD(Vis_thread);

@@ -26,7 +26,7 @@
 #include "VisStructureDrawer.h"
 #include "threads.h"
 #include <FL/gl.h>
-#include <GL/glu.h>
+#include <openGL/glu.h>
 
 #ifndef VisWindow
 class VisWindow;

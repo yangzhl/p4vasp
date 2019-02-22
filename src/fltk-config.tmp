@@ -1,0 +1,1 @@
+/usr/local/Cellar/fltk/1.3.4-2/lib/libfltk_gl.a -framework OpenGL /usr/local/Cellar/fltk/1.3.4-2/lib/libfltk.a -lpthread -framework Cocoa

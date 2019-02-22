@@ -25,7 +25,7 @@
 
 #include <FL/Fl_Gl_Window.H>
 #include <FL/gl.h>
-#include <GL/glu.h>
+#include <openGL/glu.h>
 #include "VisWindow.h"
 
 class VisFLWindow : public Fl_Gl_Window{

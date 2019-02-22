@@ -24,7 +24,7 @@
 #include <p4vasp/VisPrimitiveDrawer.h>
 #include <math.h>
 #include <FL/gl.h>
-#include <GL/glu.h>
+#include <openGL/glu.h>
 #include <stdio.h>
 #include <p4vasp/Exceptions.h>
 
