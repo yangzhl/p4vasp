@@ -115,7 +115,7 @@ Installation (MacOS)
 
 3) Install other necessary library:	
 ```
-   $ brew install python@2 pip gcc gtk+ pygtk —with-libglade && pip install pyopengl numpy
+   $ brew install python@2 pip gcc gtk+ pygtk --with-libglade && pip install pyopengl numpy
 ```
 4) Apply patch to the sourcefile:	
 ```
