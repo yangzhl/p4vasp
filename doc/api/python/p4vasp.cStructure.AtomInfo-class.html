@@ -34,7 +34,7 @@
       <th class="navbar" align="right" width="100%">
         <table border="0" cellpadding="0" cellspacing="0">
           <tr><th class="navbar" align="center"
-            ><a class="navbar" target="_top" href="../index.html">p4vasp</a></th>
+            ><a class="navbar" target="_top" href="./index.html">p4vasp</a></th>
           </tr></table></th>
   </tr>
 </table>
@@ -109,7 +109,7 @@ Yhe init parameter can be:</td>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a name="setAtomInfo"></a><span class="summary-sig-name">setAtomInfo</span>(<span class="summary-sig-arg">self</span>,
+          <td><span class="summary-sig"><a href="p4vasp.cStructure.AtomInfo-class.html#setAtomInfo" class="summary-sig-name">setAtomInfo</a>(<span class="summary-sig-arg">self</span>,
         <span class="summary-sig-arg">a</span>)</span></td>
           <td align="right" valign="top">
             <span class="codelink"><a href="p4vasp.cStructure-pysrc.html#AtomInfo.setAtomInfo">source&nbsp;code</a></span>
@@ -217,7 +217,7 @@ Yhe init parameter can be:</td>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a name="__repr__"></a><span class="summary-sig-name">__repr__</span>(<span class="summary-sig-arg">self</span>)</span></td>
+          <td><span class="summary-sig"><a href="p4vasp.cStructure.AtomInfo-class.html#__repr__" class="summary-sig-name">__repr__</a>(<span class="summary-sig-arg">self</span>)</span></td>
           <td align="right" valign="top">
             <span class="codelink"><a href="p4vasp.cStructure-pysrc.html#AtomInfo.__repr__">source&nbsp;code</a></span>
             
@@ -360,7 +360,7 @@ Yhe init parameter can be:</td>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a name="__del__"></a><span class="summary-sig-name">__del__</span>(<span class="summary-sig-arg">self</span>,
+          <td><span class="summary-sig"><a href="p4vasp.cStructure.AtomInfo-class.html#__del__" class="summary-sig-name">__del__</a>(<span class="summary-sig-arg">self</span>,
         <span class="summary-sig-arg">destroy</span>=<span class="summary-sig-default">_cp4vasp.delete_AtomInfo</span>)</span></td>
           <td align="right" valign="top">
             <span class="codelink"><a href="p4vasp.cStructure-pysrc.html#AtomInfo.__del__">source&nbsp;code</a></span>
@@ -373,21 +373,31 @@ Yhe init parameter can be:</td>
   </tr>
   <tr>
     <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="p4vasp.Structure.AtomInfo-class.html">Structure.AtomInfo</a></code></b>:
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#allocate">allocate</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#appendEmpty">appendEmpty</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#createAtomsArray">createAtomsArray</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#findRecordContaining">findRecordContaining</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#findRecordIndexContaining">findRecordIndexContaining</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#firstAtomIndexForSpecie">firstAtomIndexForSpecie</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#getRecordForAtom">getRecordForAtom</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#getRecordForElement">getRecordForElement</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#getRecordForElementSafe">getRecordForElementSafe</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#lastAtomIndexForSpecie">lastAtomIndexForSpecie</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#removeRecordsWithZeroAtomspertype">removeRecordsWithZeroAtomspertype</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#speciesIndex">speciesIndex</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#updateAttributes">updateAttributes</a></code>,
-      <code><a href="p4vasp.Structure.AtomInfo-class.html#writexml">writexml</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>cp4vasp.AtomInfo</code></b>:
+      <code>allocate</code>,
+      <code>clean</code>,
+      <code>clone</code>,
+      <code>delitem</code>,
+      <code>getClassName</code>,
+      <code>getNatoms</code>,
+      <code>getRecordForAtom</code>,
+      <code>getRecordForElement</code>,
+      <code>getRecordForElementSafe</code>,
+      <code>len</code>,
+      <code>realloc</code>,
+      <code>speciesIndex</code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>Structure.AtomInfo</code></b>:
+      <code>appendEmpty</code>,
+      <code>createAtomsArray</code>,
+      <code>downscale</code>,
+      <code>findRecordContaining</code>,
+      <code>findRecordIndexContaining</code>,
+      <code>firstAtomIndexForSpecie</code>,
+      <code>lastAtomIndexForSpecie</code>,
+      <code>removeRecordsWithZeroAtomspertype</code>,
+      <code>updateAttributes</code>,
+      <code>writexml</code>
       </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code><a href="p4vasp.util.ToXMLHelper-class.html">util.ToXMLHelper</a></code></b>:
       <code><a href="p4vasp.util.ToXMLHelper-class.html#getDefaultFormat">getDefaultFormat</a></code>,
@@ -438,6 +448,12 @@ Yhe init parameter can be:</td>
   </tr>
   <tr>
     <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>cp4vasp.AtomInfo</code></b>:
+      <code>__setattr__</code>,
+      <code>__swig_destroy__</code>,
+      <code>__swig_getmethods__</code>,
+      <code>__swig_setmethods__</code>
+      </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code><a href="p4vasp.util.ToXMLHelper-class.html">util.ToXMLHelper</a></code></b>:
       <code><a href="p4vasp.util.ToXMLHelper-class.html#float_format">float_format</a></code>,
       <code><a href="p4vasp.util.ToXMLHelper-class.html#int_format">int_format</a></code>,
@@ -499,6 +515,29 @@ Yhe init parameter can be:
     <dt>Overrides:
         <a href="p4vasp.Structure.AtomInfo-class.html#__init__">Structure.AtomInfo.__init__</a>
         <dd><em class="note">(inherited documentation)</em></dd>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="setAtomInfo"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">setAtomInfo</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">a</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="p4vasp.cStructure-pysrc.html#AtomInfo.setAtomInfo">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Overrides:
+        cp4vasp.AtomInfo.setAtomInfo
     </dt>
   </dl>
 </td></tr></table>
@@ -621,6 +660,29 @@ Yhe init parameter can be:
   <dl class="fields">
     <dt>Overrides:
         <a href="p4vasp.Structure.AtomInfo-class.html#setRecord">Structure.AtomInfo.setRecord</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__repr__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__repr__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Representation operator)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="p4vasp.cStructure-pysrc.html#AtomInfo.__repr__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Overrides:
+        cp4vasp._swig_repr
     </dt>
   </dl>
 </td></tr></table>
@@ -815,6 +877,30 @@ all those attributes.
   </dl>
 </td></tr></table>
 </div>
+<a name="__del__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__del__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">destroy</span>=<span class="sig-default">_cp4vasp.delete_AtomInfo</span>)</span>
+    <br /><em class="fname">(Destructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="p4vasp.cStructure-pysrc.html#AtomInfo.__del__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Overrides:
+        __del__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
 <br />
 <!-- ==================== NAVIGATION BAR ==================== -->
 <table class="navbar" border="0" width="100%" cellpadding="0"
@@ -840,14 +926,14 @@ all those attributes.
       <th class="navbar" align="right" width="100%">
         <table border="0" cellpadding="0" cellspacing="0">
           <tr><th class="navbar" align="center"
-            ><a class="navbar" target="_top" href="../index.html">p4vasp</a></th>
+            ><a class="navbar" target="_top" href="./index.html">p4vasp</a></th>
           </tr></table></th>
   </tr>
 </table>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Sun Aug 16 22:08:10 2015
+    Generated by Epydoc 3.0.1 on Fri Feb 22 20:55:42 2019
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

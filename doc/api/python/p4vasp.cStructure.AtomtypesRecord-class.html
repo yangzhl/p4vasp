@@ -34,7 +34,7 @@
       <th class="navbar" align="right" width="100%">
         <table border="0" cellpadding="0" cellspacing="0">
           <tr><th class="navbar" align="center"
-            ><a class="navbar" target="_top" href="../index.html">p4vasp</a></th>
+            ><a class="navbar" target="_top" href="./index.html">p4vasp</a></th>
           </tr></table></th>
   </tr>
 </table>
@@ -125,7 +125,7 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a name="clone"></a><span class="summary-sig-name">clone</span>(<span class="summary-sig-arg">self</span>)</span><br />
+          <td><span class="summary-sig"><a href="p4vasp.cStructure.AtomtypesRecord-class.html#clone" class="summary-sig-name">clone</a>(<span class="summary-sig-arg">self</span>)</span><br />
       Returns a copy of *self* .</td>
           <td align="right" valign="top">
             <span class="codelink"><a href="p4vasp.cStructure-pysrc.html#AtomtypesRecord.clone">source&nbsp;code</a></span>
@@ -277,7 +277,7 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a name="__del__"></a><span class="summary-sig-name">__del__</span>(<span class="summary-sig-arg">self</span>,
+          <td><span class="summary-sig"><a href="p4vasp.cStructure.AtomtypesRecord-class.html#__del__" class="summary-sig-name">__del__</a>(<span class="summary-sig-arg">self</span>,
         <span class="summary-sig-arg">destroy</span>=<span class="summary-sig-default">_cp4vasp.delete_AtomtypesRecord</span>)</span></td>
           <td align="right" valign="top">
             <span class="codelink"><a href="p4vasp.cStructure-pysrc.html#AtomtypesRecord.__del__">source&nbsp;code</a></span>
@@ -290,14 +290,22 @@
   </tr>
   <tr>
     <td colspan="2" class="summary">
-    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="p4vasp.Structure.AtomtypesRecord-class.html">Structure.AtomtypesRecord</a></code></b>:
-      <code><a href="p4vasp.Structure.AtomtypesRecord-class.html#getPPSpecie">getPPSpecie</a></code>,
-      <code><a href="p4vasp.Structure.AtomtypesRecord-class.html#getPPType">getPPType</a></code>,
-      <code><a href="p4vasp.Structure.AtomtypesRecord-class.html#getPPVersion">getPPVersion</a></code>,
-      <code><a href="p4vasp.Structure.AtomtypesRecord-class.html#setPPSpecie">setPPSpecie</a></code>,
-      <code><a href="p4vasp.Structure.AtomtypesRecord-class.html#setPPType">setPPType</a></code>,
-      <code><a href="p4vasp.Structure.AtomtypesRecord-class.html#setPPVersion">setPPVersion</a></code>,
-      <code><a href="p4vasp.Structure.AtomtypesRecord-class.html#touchPP">touchPP</a></code>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>cp4vasp.AtomtypesRecord</code></b>:
+      <code>clean</code>,
+      <code>getClassName</code>,
+      <code>getElement</code>,
+      <code>getPPSpecie</code>,
+      <code>getPPType</code>,
+      <code>getPPVersion</code>,
+      <code>getPseudopotential</code>,
+      <code>setElement</code>,
+      <code>setPPSpecie</code>,
+      <code>setPPType</code>,
+      <code>setPPVersion</code>,
+      <code>setPseudopotential</code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>Structure.AtomtypesRecord</code></b>:
+      <code>touchPP</code>
       </p>
     <p class="indent-wrapped-lines"><b>Inherited from <code><a href="p4vasp.Array.ArrayRecord-class.html">Array.ArrayRecord</a></code></b>:
       <code><a href="p4vasp.Array.ArrayRecord-class.html#getArray">getArray</a></code>,
@@ -343,6 +351,15 @@ ntial&quot;, &quot;radius&quot;, &quot;covalent&quot;, &quot;n&quot;, &quot;red&
       <span class="summary-type">&nbsp;</span>
     </td><td class="summary">
         <a name="__getmethods__"></a><span class="summary-name">__getmethods__</span> = <code title="{}">{}</code>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>cp4vasp.AtomtypesRecord</code></b>:
+      <code>__swig_destroy__</code>,
+      <code>__swig_getmethods__</code>,
+      <code>__swig_setmethods__</code>
+      </p>
     </td>
   </tr>
 </table>
@@ -411,6 +428,28 @@ ntial&quot;, &quot;radius&quot;, &quot;covalent&quot;, &quot;n&quot;, &quot;red&
   <dl class="fields">
     <dt>Overrides:
         <a href="p4vasp.Array.ArrayRecord-class.html#getFields">Array.ArrayRecord.getFields</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="clone"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">clone</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="p4vasp.cStructure-pysrc.html#AtomtypesRecord.clone">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Returns a copy of *self* .</p>
+  <dl class="fields">
+    <dt>Overrides:
+        cp4vasp.AtomtypesRecord.clone
     </dt>
   </dl>
 </td></tr></table>
@@ -604,6 +643,30 @@ ntial&quot;, &quot;radius&quot;, &quot;covalent&quot;, &quot;n&quot;, &quot;red&
   </dl>
 </td></tr></table>
 </div>
+<a name="__del__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__del__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">destroy</span>=<span class="sig-default">_cp4vasp.delete_AtomtypesRecord</span>)</span>
+    <br /><em class="fname">(Destructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    ><span class="codelink"><a href="p4vasp.cStructure-pysrc.html#AtomtypesRecord.__del__">source&nbsp;code</a></span>&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Overrides:
+        __del__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
 <br />
 <!-- ==================== CLASS VARIABLE DETAILS ==================== -->
 <a name="section-ClassVariableDetails"></a>
@@ -667,14 +730,14 @@ ntial&quot;, &quot;radius&quot;, &quot;covalent&quot;, &quot;n&quot;, &quot;red&
       <th class="navbar" align="right" width="100%">
         <table border="0" cellpadding="0" cellspacing="0">
           <tr><th class="navbar" align="center"
-            ><a class="navbar" target="_top" href="../index.html">p4vasp</a></th>
+            ><a class="navbar" target="_top" href="./index.html">p4vasp</a></th>
           </tr></table></th>
   </tr>
 </table>
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Sun Aug 16 22:08:10 2015
+    Generated by Epydoc 3.0.1 on Fri Feb 22 20:55:43 2019
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"
