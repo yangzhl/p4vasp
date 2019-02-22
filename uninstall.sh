@@ -1,11 +1,11 @@
 #!/bin/sh
-rm -Rf /Users/yangzhl/p4vasp/python-packages/p4vasp
-rm -Rf /Users/yangzhl/p4vasp/python-packages/cp4vasp.py
-rm -Rf /Users/yangzhl/p4vasp/python-packages/_cp4vasp.so
-rm -f  /Users/yangzhl/p4vasp/bin/p4v.py
-rm -f  /Users/yangzhl/p4vasp/bin/p4v
-rm -Rf /Users/yangzhl/p4vasp/include/ODP
-rm -Rf /Users/yangzhl/p4vasp/include/p4vasp
-rm -Rf /Users/yangzhl/p4vasp/lib/libp4vasp.a 
-rm -Rf /Users/yangzhl/p4vasp/lib/libODP.a
-rm -Rf /Users/yangzhl/p4vasp
+rm -Rf /usr/local/lib/python2.7/site-packages/p4vasp
+rm -Rf /usr/local/lib/python2.7/site-packages/cp4vasp.py
+rm -Rf /usr/local/lib/python2.7/site-packages/_cp4vasp.so
+rm -f  /usr/local/bin/p4v.py
+rm -f  /usr/local/bin/p4v
+rm -Rf /usr/local/include/ODP
+rm -Rf /usr/local/include/p4vasp
+rm -Rf /usr/local/lib/libp4vasp.a 
+rm -Rf /usr/local/lib/libODP.a
+rm -Rf /usr/local

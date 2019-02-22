@@ -1,4 +1,4 @@
-p4vasp_home='/Users/yangzhl/p4vasp'
+p4vasp_home='/usr/local'
 name       ="p4vasp"
 version    ="develop-brance"
 release    ="Null"
