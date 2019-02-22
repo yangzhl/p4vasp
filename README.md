@@ -132,10 +132,17 @@ Installation (MacOS)
    $ make local && make && make install
 ```
 
-The problem you may encounter after execute command `make local`
+* The problem you may encounter after execute command `make local`
+
 > g++-8 command  not found 
 
 you should modify `src/Makefile.MacOS`  and `odpdom/Makefule.MacOS`   CPP and LD value according to your g++ version. Then execute again from step 5.
+
+* if you want to change the install position 
+
+modify the values **ROOT**,**P4VASP_HOME**,**SITE_PACKAGES**,**INCLUDEDIR**,**LIBDIR**,**BINDIR**  in file  `install/Configuration.mk` after `make local` command.
+
+
 
 7) The executable should located at `~/p4vasp/bin`
 
