@@ -1,5 +1,5 @@
-CPP     = g++
-LD      = g++
+CPP     = g++-8
+LD      = g++-8
 LIBS    =
 LDFLAGS += -shared -L.
 FLAGS   = -DPY_DOMEXC_MODULE="\"xml.dom.\""
@@ -9,7 +9,7 @@ FLAGS   = -DPY_DOMEXC_MODULE="\"xml.dom.\""
 #          -DNO_POS_CACHE
 #	  -DNO_THROW
 
-PYINCLUDE=`python2 -c "import sys;import os.path;print os.path.join(sys.prefix,\"include\",\"python\"+sys.version[:3])"`
+PYINCLUDE=`python -c "import sys;import os.path;print os.path.join(sys.prefix,\"include\",\"python\"+sys.version[:3])"`
 CFLAGS  += -fpic -g $(FLAGS) -I$(PYINCLUDE)  -Iinclude
 
 SWIGFLAGS = -python -c++ $(FLAGS)
