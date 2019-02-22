@@ -1,7 +1,7 @@
 -include Configuration.mk
 
-CPP=g++-7
-LD=g++-7
+CPP=g++-8
+LD=g++-8
 #CPP=icc
 #LD=icc
 
